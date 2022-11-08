@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.2s;
+}
+body {
+    margin: 0;
+    background: url('/brief3-img//Background.png');
+}
+/* ==========title styling======== */
+h1,h2,h3{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    font-family: 'Open sans', sans-serif;
+}
+h2 {
+    text-align: center;
+}
+/* ==========header decoration=============== */
+header {
+    background-color: rgb(0, 234, 230);
+    height: 7rem;
+}
+header img {
+    position: absolute;
+    width: 200px;
+    margin-top: 28px;
+    z-index: 1;
+    font-size: 26px;
+}
+header div {
+    display: flex;
+    font-size: 30px;
+    justify-content: flex-end;
+    gap: 1em;
+    margin: 0 1em 0;
+    padding: 1em 0;
+}
+header a {
+    color: rgb(0, 118, 161);
+}
+header a:hover{
+    color: rgb(0, 48, 53);
+    margin: 5px;
+}
+/* =======offer====== */
+#offer img {
+    width: 100%;
+    margin-bottom: 70px;
+}
+/* ==========what we offer======= */
+#what-we-offer{
+    margin: 5em 0;
+}
+#what-we-offer p{
+    text-align: center;
+    margin: 0 15em;
+}
+/* ==========featurs============ */
+#featurs p{
+    margin-left: 20px;
+    text-transform: lowercase;
+}
+.wrapper{
+    margin: 5em 0;
+}
+.wrapper h2{
+    margin-bottom: 2rem;
+}
+.title{
+    font-weight: bolder;
+    font-size: small;
+}
+#featurs img {
+    width: 100%;
+    height: 10rem;
+    opacity: 0.9;
+}
+#featurs img:hover {
+    opacity: 1;
+}
+#featurs{
+    display: flex;
+    margin-left: 20px;
+}
+#featurs :not(last-child){
+    margin-right: 20px;
+}
+#featurs div{
+    width: 100%;
+    background-color: #c1ffff;
+}
+/* =======feedback====== */
+#feedback{
+    display: flex;
+    margin-left: 20px;
+}
+#feedback :not(last-child){
+    margin-right: 20px;
+}
+#feedback div{
+    background-color: #c1ffff;
+}
+#feedback p{
+    margin-left: 20px;
+}
+.name{
+    font-weight: bold;
+    font-size: small;
+}
+.message{
+    font-size: small;
+    font-weight: normal;
+}
+/* ======footer======= */
+footer{
+    background-color: rgb(0, 234, 230);
+    padding: 5em 0 2em;   
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+#footer p{
+    font-weight: bold;
+}
+#footer ul{
+    list-style: none;
+    padding-left: 0em;
+}
+#footer ul li{
+    font-size: small;
+    margin-bottom: 1em;
+    color: #454545;
+    font-family: 'Open sans', sans-serif;
+}
+footer #copyright{
+    text-align: center;
+    margin-bottom: 0;
+}
+footer #last{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin-left: 22rem;
+}
+footer img{
+    width: 30%;
+    align-self: center;
+}
+@media only screen and (max-width: 768px){
+    body{
+        background: url(/brief3-img/Background.png);
+    }
+    #featurs{
+        display: flex;
+        flex-direction: column;
+    }
+    #featurs div{
+        margin-bottom: 3em;
+    }
+    #feedback{
+        display: flex;
+        flex-direction: column;
+    }
+    #feedback div{
+        margin-bottom: 3em;
+    }
+}
+    
